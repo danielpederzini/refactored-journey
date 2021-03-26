@@ -7,59 +7,162 @@ body {
     margin: auto;
 }
 
-.orange {
-    color: #FA6920;
+.blue {
+    color: #6363FF;
 }
+
+/* Estilo Header */
 
 .header {
-    background-color: #363636;
+    background-color: #202020;
     overflow: auto;
-    padding-top: 30px;
-    padding-bottom: 35px;
-    border-bottom: 3px solid #FA6920;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    position: fixed;
+    width: 100%;
 }
 
-.title {
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.catlink {
     font-family: sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 25px;
-    width: auto;
-    float: left;
+    font-size: 35px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
 }
 
 .navbar {
     font-family: sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 20px;
     width: auto;
-    float: right;
-    margin-top: 9px;
 }
 
-ul {
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+}
+
+.header_space {
+    height: 110px;
+}
+/* Estilo Banner */
+
+h1 {
     margin: 0;
 }
 
-li {
-    list-style: none;
-    float: left;
-    padding-left: 10px;
-    text-transform: uppercase;
+.banner {
+    text-align: center;
+
+    background-image: url(img/cat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 600px;
 }
 
-.bg_img {
-    width: 100%;
+.banner_highlight {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #6363FF;
+    padding-top: 80px;
+    text-shadow: 2px 2px 3px #202020;
 }
+
+.banner_text {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #505050;
+}
+
+
+/* Estilo das Sections */
+
 
 .section {
-    background-color: #363636;
+    background-color: #303030;
     overflow: auto;
+
     padding-top: 100px;
     padding-bottom: 100px;
-    border-bottom: 3px solid #FA6920;
-    border-top: 3px solid #FA6920;
+
+    text-align: center;
+}
+
+
+ /* Section Sobre - Missão Visão Valores */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 40px 20px 40px;
+    border: 0.1px solid #FFF;
+}
+
+.box img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.box b {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #6363FF;
+    font-weight: 900;
+}
+
+.box span {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+/* Estilo do footer */
+
+.footer {
+    background-color: #202020;
+    overflow: auto;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    text-align: center;
+
+}
+
+.footer b {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 900;
+
 }
 
 
