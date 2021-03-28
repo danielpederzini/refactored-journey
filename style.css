@@ -18,7 +18,7 @@ body {
     color: #6363FF;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
 }
 
@@ -92,10 +92,10 @@ a {
                 margin-left: 5px;
             }
 
-            .navbar a:hover {
-                opacity: 50%;
-                transition-duration: 0.2s;
-            }
+                .navbar a:hover {
+                    opacity: 50%;
+                    transition-duration: 0.2s;
+                }
 
 /* Fim dos estilos do Header */
 
@@ -137,7 +137,7 @@ a {
 /* Estilos das sections no geral */
 
 
-.section {
+.dark_section {
     background-color: #303030;
 
     padding-top: 100px;
@@ -151,96 +151,122 @@ a {
     text-align: center;
 }
 
+    .dark_section h1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+
+        color: #6363FF;
+    }
+
+    .dark_section h2 {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+
+        color: #6363FF;
+    }
+
+    .dark_section p {
+        font-family: sans-serif;
+        font-size: 20px;
+
+        color: #FFF;
+    }
+
+.light_section {
+    background-color: #DFDFDF;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+    .light_section h1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+
+        color: #6363FF;
+    }
+
+    .light_section h2 {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: 900;
+
+        color: #6363FF;
+    }
+
+    .light_section p {
+        font-family: sans-serif;
+        font-size: 20px;
+
+        color: #000;
+    }
+
 /* Fim dos estilos das sections no geral */
 
 
 /* Estilos da section Sobre - Missão Visão Valores */
+/* Dark Section! */
 
-    .mvv .boxes {
-        display: flex;
-
-        justify-content: space-evenly;
-
-        padding-bottom: 50px;
-        border-bottom: 1px solid #FFF;
-    }
-
-        .mvv .box {
-            width: 250px;
+        .mvv .boxes {
+            margin-top: 50px;
+            width: 100%;
 
             display: flex;
-            flex-direction: column;
 
-            align-items: center;
+            justify-content: space-evenly; 
         }
 
-            .mvv .box img {
-                height: 200px;
-                width: 200px;
+            .mvv .box {
+                width: 250px;
 
-                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
             }
 
-            .mvv .box h1 {
-                font-family: sans-serif;
-                font-size: 25px;
-                font-weight: 900;
+                .mvv .box img {
+                    height: 200px;
+                    width: 200px;
 
-                color: #6363FF;
-            }
+                    margin-bottom: 20px;
+                }
 
-            .mvv .box p {
-                font-family: sans-serif;
-                font-size: 20px;
-
-                color: #FFF;
-            }
-
-            .mvv .box span {
-                font-family: sans-serif;
-                font-size: 20px;
-                font-weight: 900;
-
-                color: #FFF;
-
-                text-transform: uppercase;
-            }
 
 /* Fim dos estilos da section Sobre - Missão Visão Valores */
 
 
 /* Estilos da section Sobre - Como tudo funciona */
+/* White Section! */
 
     .solution {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
 
-        margin-top: 50px;
+        align-items: center;
     }
 
-        .solution h1 {
-            font-family: sans-serif;
-            font-size: 40px;            
-            font-weight: 900;
-
-            color: #6363FF;
-        }
-
         .solution .boxes {
-            display: flex;
-
-            justify-content: space-evenly;
-
+            width: 100%;
             margin-top: 50px;
-        }
 
-        .solution .boxes2 {
             display: flex;
 
-            justify-content: space-evenly;
+            justify-content: space-evenly;       
         }
     
             .solution .box {
-                width: 250px;
+                width: 225px;
     
                 display: flex;
                 flex-direction: column;
@@ -254,34 +280,180 @@ a {
 
                     margin-bottom: 20px;
                 }
-    
-                .solution .box h1 {
-                    font-family: sans-serif;
-                    font-size: 25px;                   
-                    font-weight: 900;
-
-                    color: #6363FF;
-                }
-    
-                .solution .box p {
-                    font-family: sans-serif;
-                    font-size: 20px;
-
-                    color: #FFF;
-                }
-    
-                .solution .box span {
-                    font-family: sans-serif;
-                    font-size: 20px;
-                    font-weight: 900;
-
-                    color: #FFF;
-    
-                    text-transform: uppercase;
-                }
         
 
 /* Fim dos estilos da section Sobre - Como tudo funciona */
+
+
+
+/* Estilos da página de adoção */
+
+    .adoption {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+        .adoption .boxes {
+            width: 100%;
+            margin-top: 50px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+            .adoption .box {
+                background-color: #303030;
+
+                width: 300px;
+
+                border-radius: 50px;
+
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            /* Como essa é uma section clara, mas o texto
+            está dentro de uma caixa escura, especifiquei
+            estilos para p exclusivamente nessa div */
+
+                .adoption .box p {
+                    font-family: sans-serif;
+                    font-size: 20px;
+            
+                    color: #FFF;
+                }
+
+                .adoption .box img {
+                    height: 200px;
+                    width: 200px;
+
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+
+                    border-radius: 50%;
+                }
+
+                .adoption .options {
+                    width: 80%;
+
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                    padding-top: 25px;
+                    padding-bottom: 50px;
+                }
+
+                    .adoption .options a {
+                        font-family: sans-serif;
+                        font-size: 25px;
+                        font-weight: 900;
+
+                        color: #DFDFDF;
+
+                        padding: 5px 10px 5px 10px;
+                        background-color: #6363FF;
+
+                        border-radius: 20px;
+                    }
+
+                        .adoption .options a:hover {
+                            opacity: 50%;
+                            transition-duration: 0.2s;
+                        }
+
+/* Fim dos estilos da página de adoção */
+
+
+/* Estilos das páginas de login/cadastro */
+
+    .access {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .access .box {
+            background-color: #303030;
+
+            height: auto;
+            width: 500px;
+
+            border-radius: 50px;
+
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+            /* Como essa é uma section clara, mas o texto
+            está dentro de uma caixa escura, especifiquei
+            estilos para p exclusivamente nessa div */
+
+            .access .box .inputs {
+                margin-bottom: 30px;
+            }
+
+                .access .box .inputs p {
+                    font-family: sans-serif;
+                    font-size: 20px;
+                
+                    color: #FFF;
+                }
+
+                .access .box .inputs input {
+                    background-color: #DFDFDF;
+
+                    width: 300px;
+
+                    border-radius: 15px;
+
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                
+                    color: #000;
+
+                    text-align: center;
+                }
+            
+            .access .box button {
+                background-color: #6363FF;
+
+                height: 50px;
+                width: 150px;
+
+                border-radius: 20px;
+
+                font-family: sans-serif;
+                font-size: 20px;
+                font-weight: 900;
+
+                color: #FFF;
+            }
+
+                .access .box button:hover {
+                    opacity: 50%;
+                    transition-duration: 0.2s;
+                }
+
+            .access .box a {
+                font-family: sans-serif;
+                font-size: 20px;
+            
+                color: #DFDFDF;
+            }
+
+/* Fim dos estilos das páginas de login/cadastro */
 
 
 /* Estilos do footer */
@@ -298,8 +470,6 @@ a {
     .footer_content {
         display: flex;
         flex-direction: column;
-
-        justify-content: flex-start;
 
         text-align: center;
     }
@@ -349,10 +519,10 @@ a {
                 color: #FFF;
             }
 
-            .contact a:hover {
-                opacity: 50%;
-                transition-duration: 0.2s;
-            }
+                .contact a:hover {
+                    opacity: 50%;
+                    transition-duration: 0.2s;
+                }
 
 /* Fim dos estilos do footer */
 
