@@ -42,8 +42,15 @@ a {
     position: fixed;
 }
 
-.header_space {
-    height: 110px;
+.ghost_header {
+    background-color: #202020;
+    
+    width: 100%;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    overflow: auto;
 }
 
     .header_content {
@@ -119,9 +126,23 @@ a {
     background-image: url(img/cat.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 
     text-align: center;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .banner {
+        height: 600px;
+        
+        background-image: url(img/mobile_cat.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+        text-align: center;
+    }
 }
 
     .banner_highlight {
