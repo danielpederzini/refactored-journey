@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body, h1, h2 {
     margin: 0;
 }
 
@@ -16,10 +16,6 @@ body {
 
 .blue {
     color: #6363FF;
-}
-
-h1, h2 {
-    margin: 0;
 }
 
 a {
@@ -52,6 +48,7 @@ a {
 
     .header_content {
         display: flex;
+        flex-flow: row wrap;
 
         align-items: center;
         justify-content: space-around;
@@ -59,6 +56,8 @@ a {
 
         .petlink {
             display: flex;
+            flex-flow: row wrap;
+
             align-items: center;
             justify-content: space-evenly;
         }
@@ -79,17 +78,29 @@ a {
             }
 
         .navbar {
-            width: auto;
+            /* Estilos de letra não vão direto na tag a,
+            pois quero que um dos items esteja em azul,
+            por meio de uma classe "blue" */
 
             font-family: sans-serif;
             font-weight: 900;
             font-size: 20px;
-            
+                
             color: white;
+
+            width: auto;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            justify-content: center;
         }
 
             .navbar a {
-                margin-left: 5px;
+                margin-left: 10px;
             }
 
                 .navbar a:hover {
@@ -222,6 +233,7 @@ a {
             width: 100%;
 
             display: flex;
+            flex-flow: row wrap;
 
             justify-content: space-evenly; 
         }
@@ -247,7 +259,7 @@ a {
 
 
 /* Estilos da section Sobre - Como tudo funciona */
-/* White Section! */
+/* Light Section! */
 
     .solution {
         display: flex;
@@ -261,6 +273,7 @@ a {
             margin-top: 50px;
 
             display: flex;
+            flex-flow: row wrap;
 
             justify-content: space-evenly;       
         }
@@ -287,6 +300,7 @@ a {
 
 
 /* Estilos da página de adoção */
+/* Light Section! */
 
     .adoption {
         display: flex;
@@ -300,6 +314,7 @@ a {
             margin-top: 50px;
 
             display: flex;
+            flex-flow: row wrap;
 
             align-items: center;
             justify-content: space-evenly;
@@ -343,6 +358,8 @@ a {
                     width: 80%;
 
                     display: flex;
+                    flex-flow: row wrap;
+
                     justify-content: space-evenly;
                     
                     padding-top: 25px;
@@ -371,6 +388,7 @@ a {
 
 
 /* Estilos das páginas de login/cadastro no geral */
+/* Light Section! */
 
     .access {
         display: flex;
@@ -379,90 +397,93 @@ a {
         align-items: center;
     }
 
-    .login {
-        margin-bottom: 50px;
-    }
-
-    .signup {
-        margin-top: 50px;
-    }
-
-        .access .box {
-            background-color: #303030;
-
-            height: auto;
-            width: auto;
-
-            border-radius: 50px;
-
-            padding: 50px 100px 50px 100px;
-
-            display: flex;
-            flex-direction: column;
-
-            align-items: center;
-            justify-content: space-evenly;
+        .login {
+            margin-bottom: 50px;
         }
 
-            .access .box .inputs {
-                margin-bottom: 30px;
+        .signup {
+            margin-top: 50px;
+        }
+
+            .access .box {
+                background-color: #303030;
+
+                height: auto;
+                width: auto;
+
+                border-radius: 50px;
+
+                padding: 50px 100px 50px 100px;
+
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
+                justify-content: space-evenly;
             }
 
-                .access .box .inputs p {
+                .access .box .inserts {
+                    margin-top: 30px;
+                    margin-bottom: 30px;     
+                }
+
+                    .access .box .inserts p {
+                        font-family: sans-serif;
+                        font-size: 20px;
+                    
+                        color: #FFF;
+                    }
+
+                    .access .box .inserts input {
+                        background-color: #DFDFDF;
+
+                        height: 30px;
+                        width: 300px;
+
+                        border-radius: 15px;
+
+                        font-family: sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                    
+                        color: #000;
+
+                        text-align: center;
+                    }
+                
+                .access .box button {
+                    background-color: #6363FF;
+
+                    height: 50px;
+                    width: 150px;
+
+                    border-radius: 20px;
+
                     font-family: sans-serif;
                     font-size: 20px;
-                
+                    font-weight: 900;
+
                     color: #FFF;
                 }
 
-                .access .box .inputs input {
-                    background-color: #DFDFDF;
+                    .access .box button:hover {
+                        opacity: 50%;
+                        transition-duration: 0.2s;
+                    }
 
-                    height: 30px;
-                    width: 300px;
-
-                    border-radius: 15px;
+                .access .box a {
+                    margin-top: 20px;
 
                     font-family: sans-serif;
                     font-size: 20px;
-                    font-weight: 500;
                 
-                    color: #000;
-
-                    text-align: center;
-                }
-            
-            .access .box button {
-                background-color: #6363FF;
-
-                height: 50px;
-                width: 150px;
-
-                border-radius: 20px;
-
-                font-family: sans-serif;
-                font-size: 20px;
-                font-weight: 900;
-
-                color: #FFF;
-            }
-
-                .access .box button:hover {
-                    opacity: 50%;
-                    transition-duration: 0.2s;
+                    color: #DFDFDF;
                 }
 
-            .access .box a {
-                font-family: sans-serif;
-                font-size: 20px;
-            
-                color: #DFDFDF;
-            }
-
-                .access .box a:hover {
-                    opacity: 50%;
-                    transition-duration: 0.2s;
-                }
+                    .access .box a:hover {
+                        opacity: 50%;
+                        transition-duration: 0.2s;
+                    }
 
 
 /* Fim dos estilos das páginas de login/cadastro */
@@ -507,6 +528,7 @@ a {
 
         .contact {
             display: flex;
+            flex-flow: row wrap;
 
             justify-content: space-evenly;
         }
